@@ -1,0 +1,649 @@
+body {
+  font-family: "Montserrat", serif;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: black;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 3.5rem;
+  background-color: black;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+}
+
+#spotify-black-icon {
+  height: 3.7rem;
+  position: relative;
+  left: 0.5rem;
+  top: -0.2rem;
+  cursor: pointer;
+}
+
+.panel {
+  display: flex;
+  position: relative;
+  left: 27rem;
+}
+
+.home-menu {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0s transform;
+}
+
+.home-menu:hover {
+  transform: scale(1.03);
+  background-color: #292929;
+  transition-delay: 5ms;
+}
+
+.home-menu i {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.search-bar {
+  height: 3rem;
+  width: 29.4rem;
+  background-color: #242424;
+  border-radius: 4rem;
+  margin: auto 0.5rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+  opacity: 0.7;
+  margin-top: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s background-color;
+  cursor:text;
+}
+
+.search-bar:hover {
+  background-color: #333;
+  transition-delay: 0.15s;
+}
+
+.search-bar i {
+  padding: 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.explore-premium {
+  position: relative;
+  right: -34rem;
+  height: 2.1rem;
+  width: 9rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 4rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0.5rem;
+  cursor: pointer;
+  transition: 0s transform;
+}
+
+.explore-premium:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+  transition-delay: 5ms;
+}
+
+.install-app {
+  position: relative;
+  right: -35rem;
+  height: 2.1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0.5rem;
+  cursor: pointer;
+  transition: 0s transform;
+}
+
+.install-app:hover {
+  transform: scale(1.03);
+  opacity: 1;
+  transition-delay: 5ms;
+}
+
+.install-app i {
+  margin: 0.3rem;
+}
+
+.notifications-icon {
+  position: relative;
+  right: -36.5rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0s transform;
+}
+
+.notifications-icon:hover {
+  transform: scale(1.03);
+  opacity: 1;
+  transition-delay: 5ms;
+}
+
+.profile {
+  background-color: #1ed760;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: relative;
+  right: -37.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 0.85rem;
+  top: 0.5rem;
+  cursor: pointer;
+  transition: 0s transform;
+}
+
+.profile:hover {
+  transform: scale(1.05);
+  transition-delay: 5ms;
+}
+
+main {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 26.25rem;
+  height: 36.1rem;
+  background-color: #121212;
+  box-sizing: border-box;
+  overflow: auto;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.3rem 1.5rem;
+}
+
+.first-sec {
+  height: 6.75rem;
+  box-sizing: border-box;
+}
+
+.library {
+  height: 3.75rem;
+  opacity: 0.7;
+  box-sizing: border-box;
+  font-weight: 700;
+  display: flex;
+  font-size: 0.95rem;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.library img {
+  height: 1.25rem;
+  margin-right: 0.9rem;
+}
+
+.library-icons {
+  position: relative;
+  right: -11.7rem;
+}
+
+.fa-plus {
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-right: 1.2rem;
+}
+
+.fa-arrow-right {
+  font-size: 1.1rem;
+}
+
+.badge-sec {
+  display: flex;
+  margin-left: -0.3rem;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.badge {
+  height: 2rem;
+  border-radius: 4rem;
+  background-color: #282828;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.library-search-sec {
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.library-search-sec .fa-magnifying-glass {
+  font-size: 0.9rem;
+}
+
+.library-search-sec-recents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -17.3rem;
+}
+
+.library-search-sec-recents span {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.library-search-sec-recents .fa-ellipsis-vertical {
+  margin-left: 0.4rem;
+}
+
+.library-search-sec-recents .fa-bars {
+  margin-left: 0.15rem;
+}
+
+.playlist-sec {
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+
+.playlist-list,
+.playlist ul {
+  list-style: none;
+}
+
+.playlist {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+.playlist img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.24rem;
+  margin: 0.3rem -2.5rem auto -3rem;
+}
+
+.playlist li {
+  font-size: 0.9rem;
+  margin-left: 0.6rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.playlist li:first-of-type {
+  font-weight: 500;
+  opacity: 1;
+  margin-bottom: 0.2rem;
+}
+
+#current-playlist {
+  color: #1ed760;
+}
+
+.main-content {
+  flex: 1;
+  height: 36.1rem;
+  background-color: #121212;
+  box-sizing: border-box;
+  overflow: auto;
+  border-radius: 0.5rem;
+}
+
+.main-content .badge-sec {
+  height: 4rem;
+  color: white;
+  margin-left: 2.5rem;
+}
+
+.main-content .badge:first-child {
+  background-color: white;
+  color: black;
+}
+
+.main-content section {
+  margin: 0.3rem 2.5rem;
+  box-sizing: border-box;
+  color: white;
+}
+
+.frequently-played {
+  display: grid;
+  height: 6.5rem;
+  width: 63.25rem;
+  box-sizing: border-box;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.frequently-played-playlist {
+  height: 3rem;
+  width: 100%;
+  background-color: #282828;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.frequently-played img {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.playing-sections {
+  margin: 2.5rem auto;
+  box-sizing: border-box;
+}
+
+.recently-played {
+  margin: 4rem auto 2.5rem auto;
+}
+
+.main-content h2 {
+  cursor: pointer;
+}
+
+.playlists {
+  display: flex;
+  box-sizing: border-box;
+  margin-left: -0.7rem;
+  margin-top: -0.9rem;
+}
+
+.playlist-card {
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  font-size: 0.83rem;
+  font-weight: 500;
+  cursor: pointer;
+  height: 16.5rem;
+  width: 13.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.recently-played-card {
+  height: 12.5rem;
+  width: 9.5rem;
+  color: white;
+}
+
+.playlist-card img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.recently-played-card img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.about {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.list {
+  margin-right: 3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+.list li {
+  line-height: 1.8rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.list-heading {
+  font-weight: 700;
+  color: white !important;
+}
+
+.social-media {
+  display: flex;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  right: -4rem;
+  top: 1rem;
+}
+
+.social-media div {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #282828;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.hr {
+  width: 62.6rem;
+  border: 0.0625rem solid #242424;
+  margin-left: 2.3rem;
+  margin-top: 1.2rem;
+}
+
+.copyright-section {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 2.3rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.copyright-section div {
+  margin-right: 1.3rem;
+}
+
+.copyright-section div:last-child {
+  position: relative;
+  right: -15rem;
+}
+
+.music-player {
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+}
+
+.song-details {
+  width: 28rem;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+.song-details img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 0.2rem;
+}
+
+.song-details ul {
+  margin-left: -1.5rem;
+}
+
+.song-details i {
+  color: #1ed760;
+  font-size: 0.95rem;
+  margin-left: 0.8rem;
+}
+
+.song-details li:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+
+.player {
+  width: 38rem;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.player-tools {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player img {
+  height: 0.9rem;
+  width: 0.9rem;
+  margin-right: 1.6rem;
+  opacity: 0.7;
+}
+
+#pause-btn {
+  height: 1.9rem;
+  width: 1.9rem;
+  opacity: 1;
+}
+
+.player-slider {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+}
+
+.player-slider .slider {
+  height: 0.25rem;
+  width: 32rem;
+  background-color: #282828;
+  margin: auto 0.5rem;
+  border-radius: 1rem;
+}
+
+.controls {
+  width: 28.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.controls img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0.6rem;
+}
+
+#control-icon1 {
+  height: 2.2rem;
+  width: 1.5rem;
+}
+
+#control-icon2 {
+  height: 2.2rem;
+  width: 1.5rem;
+  margin-left: 0.4rem;
+}
+
+#control-icon3 {
+  height: 1.2rem;
+  width: 1.3rem;
+  opacity: 0.8;
+}
+
+#control-icon4 {
+  height: 0.8rem;
+  width: 1rem;
+  opacity: 0.8;
+  margin-left: 0.8rem;
+}
+
+#control-icon5 {
+  height: 2.2rem;
+  width: 1.6rem;
+}
+
+.controls .slider {
+  height: 0.25rem;
+  width: 5.8rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin-left: 0.3rem;
+}
+
+#control-icon6 {
+  height: 2.2rem;
+  width: 1.6rem;
+}
+
+.controls i {
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 0.7rem;
+}

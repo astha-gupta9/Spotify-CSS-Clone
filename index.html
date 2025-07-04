@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./Assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="spotify-black-icon" src="/Assets/Spotify_black_icon.jpg" alt="Spotify-black-icon">
+            <div class="panel">
+                <div class="home-menu">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    What do you want to play?
+                </div>
+            </div>
+            <div class="explore-premium">Explore Premium</div>
+            <div class="install-app"><i class="fa-regular fa-circle-down"></i> Install App</div>
+            <div class="notifications-icon"><i class="fa-regular fa-bell"></i></div>
+            <div class="profile"><i class="fa-regular fa-user"></i></div>
+        </nav>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="first-sec">
+                <div class="library">
+                    <img src="/Assets/library_icon.png" alt="library-icon">
+                    Your Library
+                    <div class="library-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="badge-sec">
+                    <div class="badge">Playlists</div>
+                    <div class="badge">Artists</div>
+                    <div class="badge">Albums</div>
+                </div>
+            </div>
+            <div class="second-sec">
+                <div class="library-search-sec">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="library-search-sec-recents">
+                        <span>Recents</span>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="playlist-sec">
+                    <ul class="playlist-list">
+                        <li class="playlist liked-songs-playlist">
+                            <img src="./Assets/liked-songs-card.jpg" alt="liked-songs-card">
+                            <ul>
+                                <li id="current-playlist">Liked Songs</li>
+                                <li>Playlist . 283 songs</li>
+                            </ul>
+                        </li>
+                        <li class="playlist dance-songs-playlist">
+                            <img src="./Assets/dance-songs-card.jpg" alt="dance-songs-card">
+                            <ul>
+                                <li>Dance Songs</li>
+                                <li>Playlist . 100 songs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="badge-sec">
+                <div class="badge">All</div>
+                <div class="badge">Music</div>
+                <div class="badge">Podcasts</div>
+            </div>
+            <section>
+                <div class="frequently-played">
+                    <div class="frequently-played-playlist"><img src="./Assets/liked-songs-card.jpg"
+                            alt="liked-songs">Liked Songs</div>
+                    <div class="frequently-played-playlist"><img src="./Assets/7be6f5d41a68233709523a6427d905ca.jpg"
+                            alt="throwback-songs">Throwback 90s</div>
+                    <div class="frequently-played-playlist"><img src="./Assets/840d0b75aaa9cfcf136748829f6f8ce5.jpg"
+                            alt="travel-songs">Travel Jams</div>
+                    <div class="frequently-played-playlist"><img
+                            src="./Assets/pink-rose-spotify-playlist-cover-fg1x3c2x4m1tan10.jpg" alt="pink-rose">Pink
+                        Rose</div>
+                    <div class="frequently-played-playlist"><img src="./Assets/fcb2c7102027459.5f2cc34b5cebc.png"
+                            alt="80s-songs">80s Bollywood</div>
+                    <div class="frequently-played-playlist"><img src="./Assets/images (1).jpg" alt="chill-songs">Chill
+                        Alone</div>
+                    <div class="frequently-played-playlist"><img src="./Assets/images (2).jpg" alt="groove-songs">Groove
+                        Along</div>
+                    <div class="frequently-played-playlist"><img src="./Assets/images.jpg"
+                            alt="nostalgic-songs">Nostalgic
+                        2000s</div>
+                </div>
+                <div class="recently-played playing-sections">
+                    <h2>Recently played</h2>
+                    <div class="playlists">
+                        <div class="recently-played-card playlist-card"><img
+                                src="./Assets/7be6f5d41a68233709523a6427d905ca.jpg" alt="throwback-90s">Throwback 90s
+                        </div>
+                        <div class="recently-played-card playlist-card"><img
+                                src="./Assets/840d0b75aaa9cfcf136748829f6f8ce5.jpg" alt="travel-jams">Travel Jams</div>
+                        <div class="recently-played-card playlist-card"><img src="./Assets/card1img.jpeg"
+                                alt="top-50">Top 50 - Global</div>
+                        <div class="recently-played-card playlist-card"><img src="./Assets/card2img.jpeg"
+                                alt="mahiye-jinna-sona">Mahiye Jinna Sona</div>
+                        <div class="recently-played-card playlist-card"><img src="./Assets/card3img.jpeg"
+                                alt="lofi-mix-1">Lofi Mix 1</div>
+                    </div>
+                </div>
+                <div class="playing-sections">
+                    <h2>Made For You</h2>
+                    <div class="playlists">
+                        <div class="playlist-card"><img src="./Assets/dailymix1.jpeg" alt="daily-mix-1">Ed Sheeren,
+                            Stephen Sanchez, Shakira and...</div>
+                        <div class="playlist-card"><img src="./Assets/dailymix2.jpeg" alt="daily-mix-2">Taylor Swift,
+                            Ariana Grande and more</div>
+                        <div class="playlist-card"><img src="./Assets/dailymix3.jpeg" alt="daily-mix-3">Miley Cyrus,
+                            Justin Bieber and more</div>
+                    </div>
+                </div>
+                <div class="playing-sections">
+                    <h2>Jump back in</h2>
+                    <div class="playlists">
+                        <div class="playlist-card"><img src="./Assets/card1.png" alt="card-1">Road Trip Hits</div>
+                        <div class="playlist-card"><img src="./Assets/card2.webp" alt="card-2">Evening Jams</div>
+                        <div class="playlist-card"><img src="./Assets/card3.jpeg" alt="card-3">Sad Songs</div>
+                        <div class="playlist-card"><img src="./Assets/card4.jpeg" alt="card-4">Smile</div>
+                    </div>
+                </div>
+            </section>
+            <div class="footer">
+                <div class="about">
+                    <div class="list">
+                        <ul>
+                            <li class="list-heading">Company</li>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="list-heading">Communities</li>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="list-heading">Useful links</li>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="list-heading">Spotify Plans</li>
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                        </ul>
+                    </div>
+                    <div class="social-media">
+                        <div><i class="fa-brands fa-instagram"></i></div>
+                        <div><i class="fa-brands fa-twitter"></i></div>
+                        <div><i class="fa-brands fa-facebook"></i></div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="copyright-section">
+                    <div>Legal</div>
+                    <div>Safety & Privacy Center</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookies</div>
+                    <div>About Ads</div>
+                    <div>Accessibility</div>
+                    <div>&copy; 2025 Spotify AB</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="music-player">
+            <div class="song-details">
+                <img src="./Assets/Jalebi_Baby.jpeg" alt="">
+                <ul>
+                    <li>Jalebi Baby</li>
+                    <li>Tesher</li>
+                </ul>
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="player">
+                <div class="player-tools">
+                    <img src="./Assets/player_icon1.png" alt="player-icon-1">
+                    <img src="./Assets/player_icon2.png" alt="player-icon-2">
+                    <img src="./Assets/player_icon3.png" alt="player-icon-3" id="pause-btn">
+                    <img src="./Assets/player_icon4.png" alt="player-icon-4">
+                    <img src="./Assets/player_icon5.png" alt="player-icon-5">
+                </div>
+                <div class="player-slider">
+                    <span>0:00</span>
+                    <div class="slider"></div>
+                    <span>3:12</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="./Assets/controls_icon1.png" alt="control-icon1" id="control-icon1">
+                <img src="./Assets/controld_icon2.png" alt="control-icon2" id="control-icon2">
+                <img src="./Assets/controls_icon3.png" alt="control-icon3" id="control-icon3">
+                <img src="./Assets/controls_icon4.png" alt="control-icon4" id="control-icon4">
+                <img src="./Assets/controls_icon5.png" alt="control-icon5" id="control-icon5">
+                <div class="slider"></div>
+                <img src="./Assets/album_icon2.png" alt="control-icon6" id="control-icon6">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
