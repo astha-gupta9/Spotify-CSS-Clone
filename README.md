@@ -21,16 +21,6 @@ This project replicates the look and feel of Spotify's homepage and player layou
 
 ---
 
-## 📸 Screenshots
-
-## 📸 Screenshots
-
-### Home Page UI
-![Home Page](assets/screenshot1.png)
-![Home Page](assets/screenshot2.png)
-
----
-
 ## 📂 How to Run Locally
 
 1. Clone the repository:
