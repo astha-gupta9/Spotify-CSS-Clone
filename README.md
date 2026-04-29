@@ -1,3 +1,5 @@
+### ⚠️ This is a learning project built while practicing HTML and CSS basics.
+
 # 🎧 Spotify CSS Clone
 
 A front-end clone of the **Spotify** web interface built using **HTML** and **CSS**.  
